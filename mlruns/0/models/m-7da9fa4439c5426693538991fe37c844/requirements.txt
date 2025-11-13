@@ -1,0 +1,6 @@
+mlflow==3.3.2
+scikit-learn
+numpy
+pandas
+xgboost
+joblib

@@ -1,0 +1,40 @@
+artifact_path: file:///E:/Mini%20projects/mlflow/Q3/mlruns/0/models/m-7da9fa4439c5426693538991fe37c844/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.3.2
+model_id: m-7da9fa4439c5426693538991fe37c844
+model_size_bytes: 269935
+model_uuid: m-7da9fa4439c5426693538991fe37c844
+prompts: null
+run_id: 35696c2472864c11887c4a1fb2abea70
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "cpu_request", "required": true}, {"type":
+    "double", "name": "mem_request", "required": true}, {"type": "double", "name":
+    "cpu_limit", "required": true}, {"type": "double", "name": "mem_limit", "required":
+    true}, {"type": "double", "name": "runtime_minutes", "required": true}, {"type":
+    "boolean", "name": "controller_kind_Job", "required": true}, {"type": "boolean",
+    "name": "controller_kind_ReplicaSet", "required": true}, {"type": "boolean", "name":
+    "controller_kind_ReplicationController", "required": true}, {"type": "boolean",
+    "name": "controller_kind_StatefulSet", "required": true}]'
+  outputs: '[{"type": "float", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-13 14:11:44.951537'

@@ -1,0 +1,28 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "cpu_request",
+      "mem_request",
+      "cpu_limit",
+      "mem_limit",
+      "runtime_minutes",
+      "controller_kind_Job",
+      "controller_kind_ReplicaSet",
+      "controller_kind_ReplicationController",
+      "controller_kind_StatefulSet"
+    ],
+    "data": [
+      [
+        -0.1376192563279438,
+        -0.1362238025075896,
+        -0.1914331058502752,
+        -0.1372240099893819,
+        -0.2790119881262801,
+        false,
+        false,
+        false,
+        false
+      ]
+    ]
+  }
+}

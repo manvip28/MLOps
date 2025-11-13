@@ -1,69 +1,45 @@
-# ========== Python ==========
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# ========== Virtual Envs ==========
+# Virtual env
 .env
 .venv
 env/
 venv/
 
-# ========== Jupyter ==========
-.ipynb_checkpoints/
-
-# ========== System Files ==========
+# System
 .DS_Store
 Thumbs.db
 
-# ========== VSCode ==========
+# VSCode
 .vscode/
 
-# ========== Logs ==========
-logs/
-*.log
-
-# ========== DVC Internal ==========
+# DVC internal
 .dvc/cache/
 .dvc/tmp/
 
-# ========== DATA (Large files tracked by DVC) ==========
+# DVC-tracked artifacts - IGNORE everything and track only .dvc files
 data/*
 !data/*.dvc
 
-# ========== MODELS Directory (large pickle files) ==========
+metrics/*
+!metrics/**/metrics.json  # keep only metrics.json SMALL files
+!metrics/**/.gitignore    # keep ignore files
+# ignore residuals and pngs
+metrics/**/*.png
+metrics/**/residuals.png
+
 models/*
-!models/*.dvc
+!models/*.dvc   # allow only DVC files to be tracked, ignore .pkl and others
 
-# ========== MLflow: Ignore large model artifacts ==========
-# Keep metadata (meta.yaml, metrics, params) BUT ignore large artifacts
-
-# Ignore MLflow model artifacts in run outputs
+# MLflow - ignore model binaries
 mlruns/**/artifacts/*
-mlruns/**/outputs/*/model.pkl
-mlruns/**/outputs/*/conda.yaml
-mlruns/**/outputs/*/python_env.yaml
-mlruns/**/outputs/*/MLmodel
-mlruns/**/outputs/*/requirements.txt
-mlruns/**/outputs/*/environment_variables.txt
-mlruns/**/outputs/*/input_example.json
-mlruns/**/outputs/*/serving_input_example.json
-
-# The central MLflow model registry (HUGE folders)
-mlruns/**/models/*/*
-!mlruns/**/models/*.dvc   # keep only DVC pointer files
-
-# Keep MLflow metadata (small files)
+mlruns/**/outputs/*/*
 !mlruns/**/meta.yaml
 !mlruns/**/metrics/*
 !mlruns/**/params/*
 !mlruns/**/tags/*
 
-# ========== Node Modules (UI, if any) ==========
-node_modules/
-
-# ========== Build/Dist ==========
-dist/
-build/
-*.egg-info/
