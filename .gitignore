@@ -20,7 +20,7 @@ Thumbs.db
 # -------------------------------
 # IGNORE ALL MODELS (PKL, MLflow)
 # -------------------------------
-models/
+/models/
 
 
 # Ignore MLflow binary model artifacts
@@ -55,3 +55,6 @@ metrics/
 # --------------------------------
 data/*
 !data/*.dvc
+
+!mlruns/**/models/*.dvc
+

@@ -1,5 +1,5 @@
 [core]
-    remote = dagshub
-['remote "dagshub"']
-    url = s3://dagshub/manvip28/cpu-usage-mlops
-    endpointurl = https://dagshub.com
+    remote = origin
+['remote "origin"']
+    url = s3://dvc
+    endpointurl = https://dagshub.com/manvip28/cpu-usage-mlops.s3
