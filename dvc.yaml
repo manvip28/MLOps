@@ -12,15 +12,4 @@ stages:
     deps:
       - src/train.py
       - data/processed.csv
-    outs:
-      - models/linear_model.pkl
-      - models/rf_model.pkl
-      - models/xgb_model.pkl
-    metrics:
-      - metrics/linear/metrics.json
-      - metrics/rf/metrics.json
-      - metrics/xgb/metrics.json
-    plots:
-      - metrics/linear/residuals.png
-      - metrics/rf/residuals.png
-      - metrics/xgb/residuals.png
+    

@@ -38,6 +38,7 @@ mlruns/**/outputs/*
 !mlruns/**/metrics/**
 !mlruns/**/params/**
 !mlruns/**/tags/**
+!mlruns/**/models/*.dvc
 
 # --------------------------------
 # IGNORE METRICS IMAGES + JSON
